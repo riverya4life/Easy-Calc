@@ -10,7 +10,7 @@ int main() {
    cout << "Введите операцию (+, -, *, /): ";
    cin >> oper;
 
-   cout << "Введите числа, разделяя их пробелом: ";
+   cout << "Введите числа разделяя их пробелом: ";
    while(cin >> num) {
       numbers.push_back(num);
       if (cin.peek() == '\n') break;
@@ -42,7 +42,7 @@ int main() {
          result = numbers[0];
          for (int i = 1; i < numbers.size(); i++) {
             if (numbers[i] == 0.0) {
-               cout << "Деление на ноль невозможно" << endl;
+               cout << "Деление на ноль невозможно нахуй" << endl;
                return 0;
             }
             result /= numbers[i];
@@ -50,7 +50,7 @@ int main() {
          break;
 
       default:
-         cout << "Неправильная операция!";
+         cout << "Неправильная операция еблан!";
          return 0;
    }
 
